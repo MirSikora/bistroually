@@ -1,0 +1,92 @@
+[
+    {
+        "title" : "Hamburgery",
+        "items" : [
+
+            ["150g","Hamburger", "1, 3, 7, 11", "110,- Kč"],
+            ["150g","Cheeseburger", "1, 3, 7, 11", "120,- Kč"],
+            ["150g","Hamburger se slaninou", "1, 3, 7, 11", "129,- Kč"],
+            ["120g","Hamburger s grilovaným hermelínem", "1, 3, 7, 11", "110,- Kč"]
+
+        ]
+    },
+    {
+        "title" : "Tortilly",
+        "items" : [
+
+            ["150g","Burrito s kuřecím masem", "1, 7", "110,- Kč"],
+            ["250g","Quesadilla se sýrem", "1, 7", "120,- Kč"],
+            ["150g","Hovězí quesadilla", "1, 7", "129,- Kč"],
+            ["150g","Tortilla plněná kuřecími stripsy", "1, 3, 7", "110,- Kč"]
+
+        ]
+    },
+    {
+        "title" : "Placky z blachy",
+        "items" : [
+
+            ["3ks", "Placky se škvarky a zakysanou smetanou", "1, 3, 7", "95,- Kč"], 
+            ["3ks", "Placky s máslem, cukrem a zakysanou smetanou", "1, 3, 7", "79,- Kč"], 
+            ["3ks", "Placky s míchanými vejci a anglickou slaninou", "1, 3, 7", "89,- Kč"]
+
+        ]
+    },
+    {
+        "title" : "Steaky, saláty a další",
+        "items" : [
+
+            ["150g","Kuřecí steak s hranolky a grilovanou zeleninou", "", "135,- Kč"],
+            ["150g","Vepřový steak s dušenou cibulí a pepřovou omáčkou, americké brambory", "", "140,- Kč"],
+            ["250g","Salát Caesar", "1, 3, 7", "130,- Kč"],
+            ["300g","Salát Caesar s kuřecím masem", "1, 3, 7", "150,- Kč"],
+            ["150g","Kuřecí řízek s bramborovou kaší", "1, 3, 7", "130,- Kč"],
+            ["130g","Smažený sýr s hranolky a naší tatarkou", "1, 3, 7", "125,- Kč"]
+
+        ]
+    },
+    {
+        "title" : "Pro děti",
+        "items" : [
+
+            ["75g","Kuřecí řízek s bramborovou kaší", "1, 3, 7", "90,- Kč"],
+            ["75g","Smažený sýr s hranolky a naší tatarkou", "1, 3, 7", "88,- Kč"],
+            ["75g","Kuřecí stripsy s bramborovou kaší", "1, 3, 7", "90,- Kč"]
+
+        ]
+    },
+    {
+        "title" : "Palačinky",
+        "items" : [
+
+            ["2ks", "Palačinky s nutellou a šlehačkou", "1, 3, 7", "79,- Kč"], 
+            ["2ks", "Palačinky se smetanovým tvarohem a čokoládou", "1, 3, 7", "75,- Kč"], 
+            ["2ks", "Palačinky s ovocem a šlehačkou", "1, 3, 7", "79,- Kč"]
+
+        ]
+    },
+    {
+        "title" : "Chuťovky",
+        "items" : [
+
+            ["200g","Cibulové kroužky s dressingem", "1, 3, 7", "55,- Kč"],
+            ["200g","Hranolky", "", "40,- Kč"],
+            ["120g","Topinka s masovou směsí sypaná sýrem", "1, 7", "99,- Kč"],
+            ["50g", "Pražené mandle", "8", "35,- Kč"],
+            ["100g", "Brambůrky", "", "40,- Kč"],
+            ["90g", "Tyčinky", "", "30,- Kč"]
+
+        ]
+    },
+    {    
+            "title" : "Omáčky",
+            "items" : [
+
+                ["50g", "Naše tatarka", "3", "10,- Kč"],
+                ["50g", "Kečup", "", "10,- Kč"],
+                ["50g", "BBQ omáčka", "", "10,- Kč"],
+                ["50g", "Bylinková omáčka", "", "10,- Kč"],
+                ["100g", "Čedarová omáčka", "7", "25,- Kč"] 
+
+            ]        
+    }
+]

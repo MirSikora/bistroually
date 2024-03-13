@@ -1,0 +1,128 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@font-face {
+  font-family: Kalam;
+  src: url("../fonts/Kalam-Bold.ttf");
+  src: url("../fonts/Kalam-Regular.ttf");
+  src: url("../fonts/Kalam-Light.ttf");
+}
+:root{
+  --bg-color: skyblue;
+  --nav-color: rgb(11, 10, 10);
+  --indicator-bg-color: #fff;
+}
+body {
+  font-family: Kalam;  
+}
+#cover{
+  background-image: url("../images/bistro_inside.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background-attachment: fixed;
+  overflow-x: hidden;   
+}
+.start {
+  margin-top: -5%;
+  margin-left: -5%;
+}
+.back {
+  margin-left: -15%;
+  margin-top: 5%;
+}
+p {
+  font-size: 14px;
+}
+.rotate{
+  rotate: -5deg;
+}
+main {
+  background-color: var(--bg-color);
+}
+nav {
+  height: 70px;
+}
+.ps-10{
+  padding-left: 100px;
+}
+@media (max-width: 575.98px){  
+    .fixed{
+    position: absolute;
+    right: 25px;    
+  }
+  .navbar-collapse{
+    background-color: var(--nav-color);
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;     
+  }
+  #gallery img{    
+    width: 100%;
+  }
+}
+@media (min-width: 575.98px){
+  .show{
+    display: none;
+  }
+}
+.nav-link:hover {  
+  font-weight: bolder;
+}
+#logo {
+  rotate: -10deg;
+}
+nav,
+#contact,
+footer {
+  background-color: var(--nav-color);
+}
+section {
+  scroll-margin-top: 70px;  
+}
+#menu,
+#about {
+  max-width: 90%;
+  min-height: 50vh;
+  padding-top: 20px;
+}
+#gallery{
+  padding-top: 20px;
+}
+#gallery img{
+  max-height: 400px;
+}
+#contact img {
+  transition: all 0.5s linear;
+}
+#contact img:hover {
+  transform: scale(1.2);
+}
+#map {
+  height: 300px;
+}
+.carousel-indicators li {
+  list-style: none;
+  box-sizing: content-box;
+  width: 30px;
+  height: 3px;
+  flex: 0 1 auto;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: var(--indicator-bg-color);
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.carousel-indicators li:active {
+  opacity: 1;
+}
+.carousel-control-prev-icon {
+  background-image: url("../images/prev.svg");
+  height: 100px;
+}
+.carousel-control-next-icon {
+  background-image: url("../images/next.svg");
+  height: 100px;
+}

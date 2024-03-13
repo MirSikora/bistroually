@@ -1,0 +1,45 @@
+[
+    {
+        "dayOfWeek": "Pondělí",
+        "day": "25. 10.",
+        "event": "normal",
+        "soup": ["0,33l", "Drůbeží vývar s nudlemi a zeleninou", "1, 9", "15,- Kč"],
+        "menu1": ["120g", "Pečená krkovička na černém pivu se šťouchanými brambory a salátem 'Coleslaw'", "7", "100,- Kč"]        
+                
+    },
+    {
+        "dayOfWeek": "Úterý",
+        "day": "26. 10.",
+        "event": "normal",
+        "soup": ["0,33l", "Minestrone s parmazánem", "7", "15,- Kč"],
+        "menu1": ["120g", "Boloňské špagety s parmazánem", "1, 7", "100,- Kč"],        
+        "menu2": ["3 ks", "Domácí tvarohové knedlíky plněné blumou, sypané tvarohem, cukrem a přelité máslem", "1, 3, 7", "90,- Kč"]
+         
+    },
+    {
+        "dayOfWeek": "Středa",
+        "day": "27. 10.",
+        "event": "normal",
+        "soup": ["0,33l", "Hovězí vývar s vaječným svitkem", "1, 3", "15,- Kč"],
+        "menu1": ["120g", "Hovězí svíčková na smetaně s kynutým houskovým knedlíkem, brusinkami a šlehačkou", "1, 3, 7", "110,- Kč"],        
+        "menu2": ["150g", "Brokolicové karbanátky s bramborovou kaší a rajčatovým salátkem", "1, 3, 7", "100,- Kč"]        
+        
+    },
+    {
+        "dayOfWeek": "Čtvrtek",
+        "day": "28. 10.",
+        "event": "Státní svátek - ZAVŘENO",
+        "soup": ["", "", "", ""],
+        "menu1": ["", "", "", ""],        
+        "menu2": ["", "", "", ""]
+    },
+    {
+        "dayOfWeek": "Pátek",
+        "day": "29. 10.",
+        "event": "normal",
+        "soup": ["0,33l", "Hrstková polévka", "1", "15,- Kč"],
+        "menu1": ["120g", "Vepřové na kari s jasmínovou rýží", "7", "100,- Kč"],        
+        "menu2": ["120g", "Masové kuličky v rajské omáčce s jasmínovou rýží", "1, 3", "90,- Kč"]
+
+    }
+]
