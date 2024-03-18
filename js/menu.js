@@ -39,61 +39,60 @@ toggleWeekMenu.addEventListener('click',()=>{
     togglePermanentMenu.classList.remove('bg-warning', 'fw-bold');
 })
 
-async function getMenuItems(){
+function getMenuItems(){
     
     //const path = './menu/week'+getNumberOfWeek()+'.json';
-    const path = './menu/week43.json';    
-    const response = await fetch(path);
-    
-    if(!response.ok){
-        weekMenu.classList.add('d-flex','justify-content-center','align-items-center', 'mt-5'); 
-        return weekMenu.textContent = 'Omlouváme se, ale denní menu zatím není k dispozici.';
-    }
-    
-    const data = await response.json();    
-    const values = [];
-    values.push(...data);
-    
-    createTag('span', toggleWeekMenu).textContent = values[0]['day']+' - '+values[4]['day'];
+    const path = './menu/week43.json'; 
+    const req = new Request(path);
+    fetch(req)
+    .then((response)=>{
 
-    values.forEach((value)=>{
-
-        createTag('h2', weekMenu, ['mt-5', 'ms-5']).textContent = value['dayOfWeek'] + ' ' + value['day'];
-
-        if(value['event'] != 'normal'){
-
-            createTag('p', weekMenu, ['ps-5']).textContent = value['event'];
-
+        if(!response.ok){
+            weekMenu.classList.add('d-flex','justify-content-center','align-items-center', 'mt-5'); 
+            return weekMenu.textContent = 'Omlouváme se, ale denní menu zatím není k dispozici.';
         }else{
+            return response.json();
+        }        
+    })
+    .then((data)=>{
+        for(value of data){
 
-            getItems(value['soup'], weekMenu);
-            getItems(value['menu1'], weekMenu);
-            if(value['menu2']) getItems(value['menu2'], weekMenu);
+                createTag('h2', weekMenu, ['mt-5', 'ms-5']).textContent = value['dayOfWeek'] + ' ' + value['day'];
+
+            if(value['event'] != 'normal'){
+
+                createTag('p', weekMenu, ['ps-5']).textContent = value['event'];
+
+            }else{
+
+                getItems(value['soup'], weekMenu);
+                getItems(value['menu1'], weekMenu);
+                if(value['menu2']) getItems(value['menu2'], weekMenu);
 
         } 
-
-    }) 
-              
+        }
+    })
+                
 };
 
-async function getPermanentMenu(){
+function getPermanentMenu(){
 
-    const response = await fetch('./menu/menu.json');
-    const data = await response.json();
-    const values = [];    
-    values.push(...data);
+    const req = new Request('./menu/menu.json');
+    fetch(req)
+    .then((response)=>response.json())
+    .then((data)=>{
 
-    values.forEach((value)=>{
-
-        createTag('h2', permanentMenu, ['mt-5', 'ms-5']).textContent = value['title'];
+        for(value of data){
+            
+            createTag('h2', permanentMenu, ['mt-5', 'ms-5']).textContent = value['title'];
         
-        value["items"].forEach((item)=>{
+            value["items"].forEach((item)=>{
                 
             getItems(item, permanentMenu);
         })
-
+        }
     })
-    
+        
 }
 
 
